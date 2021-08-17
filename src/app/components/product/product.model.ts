@@ -1,5 +1,16 @@
-export interface Product {
+//  export interface Product {
+//      id?: number
+//      name: string 
+//      price: number 
+//  }
+
+export class Product {
     id?: number
-    name: string
-    price: number
+    name?: string | null
+    price?: number | null
+
+    constructor() {
+        this.name = '';
+        this.price = null;
+    }
 }
