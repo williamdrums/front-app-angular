@@ -11,7 +11,10 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ProductCreateComponent implements OnInit {
   products: Product[] = [];
-  product = new Product;
+  product: Product = {
+    name: '',
+    price: null
+  };
 
   constructor(
     private productService: ProductService,
